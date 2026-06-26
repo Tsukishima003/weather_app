@@ -5,6 +5,8 @@ import os
 
 load_dotenv()
 
+os.environ["API_KEY"] = st.secrets["API_KEY"]
+
 API_KEY = os.getenv("API_KEY1")
 st.set_page_config(
     page_title = "weatherapp"
